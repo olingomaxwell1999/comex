@@ -6,7 +6,7 @@ import "./globals.css";
 export const metadata = {
   title: "Comex Homes",
   description:
-    "This is a a worldwide real estate farm that deals with building, selling and managing of real estate properties",
+    "This is a worldwide real estate farm that deals with building, selling and managing of real estate properties",
 };
 
 export default function RootLayout({ children }) {
@@ -38,7 +38,6 @@ export default function RootLayout({ children }) {
             src="https://www.googletagmanager.com/ns.html?id=GTM-5J274L6"
             height="0"
             width="0"
-            style="display:none;visibility:hidden"
           ></iframe>
         </noscript>
         <Navbar />

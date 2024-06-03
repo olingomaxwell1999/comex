@@ -41,15 +41,15 @@ function Properties() {
       link: "https://www.balozisuites.com/",
       units: "Available Units",
     },
-    // {
-    //   id: 4,
-    //   title: "The Reveal",
-    //   image: reveal,
-    //   location: "Kabarnet Road",
-    //   availablesuits: "Studio, 1 Bedroom Apartments",
-    //   link: "https://www.balozisuites.com/",
-    //   units: "Coming Soon",
-    // },
+    {
+      id: 4,
+      title: "The Reveal",
+      image: reveal,
+      location: "Kabarnet Road",
+      availablesuits: "Studio, 1 Bedroom Apartments",
+      link: "https://www.balozisuites.com/",
+      units: "Coming Soon",
+    },
   ];
 
   return (

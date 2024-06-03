@@ -29,7 +29,7 @@ function Footer() {
           <div className="right-area-side">
             <h3>Office Hours</h3>
             <p>Monday - Friday 07:30am to 16:30pm</p>
-            <p>Saturday 09:00am to 13:00pm</p>
+            <p>Saturday - Closed</p>
           </div>
 
           <div className="area-line"></div>

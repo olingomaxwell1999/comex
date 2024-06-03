@@ -47,7 +47,7 @@ function Properties() {
       image: reveal,
       location: "Kabarnet Road",
       availablesuits: "Studio, 1 Bedroom Apartments",
-      link: "https://www.balozisuites.com/",
+      link: "https://www.thereveal.co.ke/",
       units: "Available Units",
     },
   ];

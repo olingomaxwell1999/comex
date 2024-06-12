@@ -13,7 +13,7 @@ const MENU_LIST = [
   },
   { text: "Nyayo View Suites Two", href: "https://www.nyayoviewsuites.com/" },
   { text: "Balozi Suites", href: "https://www.balozisuites.com/" },
-  // { text: "The Reveal", href: "https://www.thereveal.co.ke/" },
+  { text: "The Reveal", href: "https://www.thereveal.co.ke/" },
 ];
 const Navbar = () => {
   const [navActive, setNavActive] = useState(null);

@@ -30,7 +30,17 @@ export default function RootLayout({ children }) {
               });
             `,
           }}
+          
         />
+        {/* Start of HubSpot Embed Code */}
+        <script
+          type="text/javascript"
+          id="hs-script-loader"
+          async
+          defer
+          src="//js-eu1.hs-scripts.com/25735940.js"
+        />
+        {/* End of HubSpot Embed Code */}
       </Head>
       <body>
         <noscript>

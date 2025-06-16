@@ -1,9 +1,9 @@
-@import url('https://fonts.cdnfonts.com/css/futura-pt');
+@import url("https://fonts.cdnfonts.com/css/futura-pt");
 
 /* Tailwind config */
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@
   letter-spacing: 1.5px;
   overflow-x: hidden;
   box-sizing: border-box;
-  font-family: 'Futura PT', sans-serif;
+  font-family: "Futura PT", sans-serif;
 }
 
 /* Global Styles */
@@ -41,7 +41,7 @@ body::-webkit-scrollbar,
 }
 
 div::-webkit-scrollbar {
-  width: 0 !important
+  width: 0 !important;
 }
 
 div {
@@ -136,7 +136,6 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
-
   /* .nav__menu-bar{
     display: none;
   } */
@@ -150,7 +149,7 @@ nav {
   }
 
   .nav__link::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 0%;
     height: 6px;
@@ -164,7 +163,6 @@ nav {
     width: 100%;
   }
 }
-
 
 /* //Banner Styles */
 
@@ -183,8 +181,6 @@ nav {
     height: 100vh;
   }
 }
-
-
 
 .text {
   position: absolute;
@@ -227,7 +223,6 @@ nav {
     font-size: 24px;
     margin-top: 10px;
   }
-
 }
 
 .middle-line {
@@ -240,8 +235,6 @@ nav {
   transform: translateX(-50%);
   transform: translateY(-50%);
 }
-
-
 
 .description-area {
   display: grid;
@@ -317,7 +310,7 @@ nav {
   outline: none;
   padding: 10px 20px;
   border-radius: 5px;
-  transition: .3s linear;
+  transition: 0.3s linear;
   border: 1px solid;
 }
 
@@ -609,7 +602,7 @@ h6 {
   border-radius: 5px;
   color: #fff;
   text-transform: uppercase;
-  transition: .3s linear;
+  transition: 0.3s linear;
   cursor: pointer;
 }
 
@@ -637,7 +630,6 @@ h6 {
   color: #f8a428;
   font-size: 30px;
 }
-
 
 /* Banner Amenities styles */
 .banner-amenities {
@@ -706,7 +698,7 @@ h6 {
   text-align: center;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .amenities-first-text {
     width: 80%;
   }
@@ -800,7 +792,6 @@ h6 {
   overflow: hidden;
   cursor: pointer;
   color: white;
-
 }
 
 .listItem .img {
@@ -916,7 +907,7 @@ ul {
   padding: 20px;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .modernCardContainer {
     flex-wrap: wrap;
   }
@@ -1128,7 +1119,7 @@ span {
 
 .social-icon {
   font-size: 20px;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   cursor: pointer;
 }
 
@@ -1152,7 +1143,7 @@ span {
   object-fit: cover;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .contact-area {
     grid-template-columns: 1fr;
   }
@@ -1166,7 +1157,7 @@ span {
   }
 }
 
-@media screen and (max-width:568px) {
+@media screen and (max-width: 568px) {
   .top-form {
     grid-template-columns: 1fr;
   }
@@ -1214,7 +1205,7 @@ span {
   gap: 20px;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .why-comex .why-comex-content {
     grid-template-columns: 1fr;
   }
@@ -1243,7 +1234,6 @@ span {
   gap: 20px;
   padding: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
 }
 
 .reason-box h2 {

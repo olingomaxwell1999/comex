@@ -12,7 +12,7 @@ import "aos/dist/aos.css";
 function Properties() {
   useEffect(() => {
     AOS.init({ duration: 1500 });
-  });
+  }, []);
 
   const propertyFeatures = [
     {
@@ -21,7 +21,7 @@ function Properties() {
       image: nyayoone,
       location: "Nairobi West",
       availablesuits: "Executive Studios and 1 Bedrooms",
-      link: "https://www.nyayoviewsuites.com/nyayoone",
+      link: "https://www.nyayoviewsuites.com/nyayoone", 
       units: "Sold Out",
     },
     {
@@ -30,7 +30,7 @@ function Properties() {
       image: nyayotwo,
       location: "Nairobi West",
       availablesuits: "Executive & Premium One Bedrooms",
-      link: "https://www.nyayoviewsuites.com/",
+      link: "https://www.nyayoviewsuites.com/", 
       units: "Available Units",
     },
     {
@@ -39,7 +39,7 @@ function Properties() {
       image: balozi,
       location: "South B",
       availablesuits: "Executive Studios and One Bedrooms",
-      link: "https://www.balozisuites.com/",
+      link: "https://www.balozisuites.com/", 
       units: "Available Units",
     },
     {
@@ -50,6 +50,8 @@ function Properties() {
       availablesuits: "Studio, 1 Bedroom Apartments",
       link: "https://www.thereveal.co.ke/",
       units: "Available Units",
+      link: "https://www.balozisuites.com/", 
+      units: "Coming Soon",
     },
     {
       id: 5,
@@ -57,18 +59,20 @@ function Properties() {
       image: astanaresidence,
       location: "Ngara, Nairobi",
       availablesuits: "Studios, 1 Bedroom Apartments",
-      link: "https://www.astanaresidence.com/",
+      link: "https://www.astanaresidence.com/", 
       units: "Coming Soon",
     },
   ];
 
   return (
-    <div data-aos="fade-up" className="mordernCardArea marginBottom">
-      <div className="proper-head">
-        <h2 className="properties-heading">Our Properties</h2>
-        <hr />
+    <div data-aos="fade-up" className="mordernCardArea marginBottom px-4 py-8">
+      <div className="proper-head text-center mb-8">
+        <h2 className="properties-heading text-3xl font-bold">Our Properties</h2>
+        <hr className="w-24 mx-auto mt-2 border-t-2 border-gray-300" />
       </div>
-      <div className="modernCardContainer marginBottom">
+
+      {/* Responsive Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {propertyFeatures.map((propertyFeature) => (
           <ModernCard
             key={propertyFeature.id}

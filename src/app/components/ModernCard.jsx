@@ -4,17 +4,19 @@ import { MdLocationOn } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ModernCard({ title, location, image, availablesuits, link, units }) {
+export default function ModernCard({
+  title,
+  location,
+  image,
+  availablesuits,
+  link,
+  units,
+}) {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:scale-105">
       {/* Image Section */}
       <div className="relative h-48 w-full">
-        <Image
-          src={image}
-          alt={title}
-          fill
-          className="object-cover"
-        />
+        <Image src={image} alt={title} fill className="object-cover" />
       </div>
 
       {/* Text Content */}
@@ -36,7 +38,11 @@ export default function ModernCard({ title, location, image, availablesuits, lin
 
         {/* Units Info */}
         <div className="mb-3">
-          <h4 className={`font-medium text-sm ${units === "Sold Out" ? "text-red-500" : "text-green-600"}`}>
+          <h4
+            className={`font-medium text-sm ${
+              units === "Sold Out" ? "text-red-500" : "text-green-600"
+            }`}
+          >
             {units}
           </h4>
           <p className="text-gray-700 text-sm">{availablesuits}</p>
@@ -47,7 +53,7 @@ export default function ModernCard({ title, location, image, availablesuits, lin
         {/* Button */}
         <div className="mt-2">
           <Link href={link} target="_blank">
-            <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors">
+            <button className="w-full bg-[#f8a428] text-white py-2 px-4 rounded transition-colors">
               Visit Property
             </button>
           </Link>

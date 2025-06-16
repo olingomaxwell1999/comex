@@ -4,7 +4,7 @@ import { MdLocationOn } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 
-function ModernCard({ title, location, image, availablesuits, link, units }) {
+export default function ModernCard({ title, location, image, availablesuits, link, units }) {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:scale-105">
       {/* Image Section */}
@@ -36,7 +36,9 @@ function ModernCard({ title, location, image, availablesuits, link, units }) {
 
         {/* Units Info */}
         <div className="mb-3">
-          <h4 className="font-medium text-sm text-gray-500">{units}</h4>
+          <h4 className={`font-medium text-sm ${units === "Sold Out" ? "text-red-500" : "text-green-600"}`}>
+            {units}
+          </h4>
           <p className="text-gray-700 text-sm">{availablesuits}</p>
         </div>
 
@@ -54,5 +56,3 @@ function ModernCard({ title, location, image, availablesuits, link, units }) {
     </div>
   );
 }
-
-export default ModernCard;

@@ -4,6 +4,7 @@ import nyayoone from "../../../assets/One Bedroom Sitting-COMEXHOMES-NYAYO-VIEW-
 import nyayotwo from "../../../assets/Lounge_angle 3.jpg";
 import balozi from "../../../assets/balozieight.jpg";
 import reveal from "../../../assets/Reveal rooftop (1).jpg";
+import astanaresidence from "../../../assets/001.jpg";
 import ModernCard from "./ModernCard";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -49,6 +50,15 @@ function Properties() {
       availablesuits: "Studio, 1 Bedroom Apartments",
       link: "https://www.thereveal.co.ke/",
       units: "Available Units",
+    },
+    {
+      id: 5,
+      title: "Astana Residence",
+      image: astanaresidence,
+      location: "Ngara, Nairobi",
+      availablesuits: "Studios, 1 Bedroom Apartments",
+      link: "https://www.astanaresidence.com/",
+      units: "Coming Soon",
     },
   ];
 

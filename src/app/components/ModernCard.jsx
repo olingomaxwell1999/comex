@@ -1,43 +1,53 @@
 import React from "react";
-import { GoStar } from "react-icons/go";
+import { AiFillStar } from "react-icons/ai";
 import { MdLocationOn } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
-import { AiFillStar } from "react-icons/ai";
 
 function ModernCard({ title, location, image, availablesuits, link, units }) {
   return (
-    <div className="modernCard mr-5 mb-5">
-      <div className="imagearea">
-        <Image src={image} alt="nyayo estate" />
+    <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:scale-105">
+      {/* Image Section */}
+      <div className="relative h-48 w-full">
+        <Image
+          src={image}
+          alt={title}
+          fill
+          className="object-cover"
+        />
       </div>
-      <div className="textarea p-3">
-        <div className="projecttitle">
-          <h3>{title} </h3>
+
+      {/* Text Content */}
+      <div className="p-4">
+        <h3 className="text-xl font-semibold mb-2">{title}</h3>
+
+        {/* Ratings */}
+        <div className="flex text-yellow-400 mb-2">
+          {[...Array(5)].map((_, i) => (
+            <AiFillStar key={i} size={18} />
+          ))}
         </div>
 
-        <div className="ratings">
-          <AiFillStar className="iconproject" />
-          <AiFillStar className="iconproject" />
-          <AiFillStar className="iconproject" />
-          <AiFillStar className="iconproject" />
-          <AiFillStar className="iconproject" />
+        {/* Location */}
+        <div className="flex items-center text-gray-600 text-sm mb-3">
+          <MdLocationOn className="mr-1" />
+          <span>{location}</span>
         </div>
 
-        <div className="location">
-          <MdLocationOn className="iconlocation" />
-          <h3>{location}</h3>
+        {/* Units Info */}
+        <div className="mb-3">
+          <h4 className="font-medium text-sm text-gray-500">{units}</h4>
+          <p className="text-gray-700 text-sm">{availablesuits}</p>
         </div>
 
-        <div className="availabe">
-          <h3>{units}</h3>
-          <p>{availablesuits}</p>
-        </div>
-        <hr className="marginTop" />
+        <hr className="my-3" />
 
-        <div className="buttonarea mt-1">
-          <Link target="_blank" href={link}>
-            <button className="btn marginTop">Visit Property</button>
+        {/* Button */}
+        <div className="mt-2">
+          <Link href={link} target="_blank">
+            <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors">
+              Visit Property
+            </button>
           </Link>
         </div>
       </div>

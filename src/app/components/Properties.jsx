@@ -1,15 +1,17 @@
 "use client";
 import React, { useEffect } from "react";
+import ModernCard from "./ModernCard";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+// Import images from your assets
 import nyayoone from "../../../assets/One Bedroom Sitting-COMEXHOMES-NYAYO-VIEW-SUITES.jpeg";
 import nyayotwo from "../../../assets/Lounge_angle 3.jpg";
 import balozi from "../../../assets/balozieight.jpg";
 import reveal from "../../../assets/Reveal rooftop (1).jpg";
 import astanaresidence from "../../../assets/001.jpg";
-import ModernCard from "./ModernCard";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
-function Properties() {
+export default function Properties() {
   useEffect(() => {
     AOS.init({ duration: 1500 });
   }, []);
@@ -65,28 +67,20 @@ function Properties() {
   ];
 
   return (
-    <div data-aos="fade-up" className="mordernCardArea marginBottom px-4 py-8">
-      <div className="proper-head text-center mb-8">
-        <h2 className="properties-heading text-3xl font-bold">Our Properties</h2>
-        <hr className="w-24 mx-auto mt-2 border-t-2 border-gray-300" />
-      </div>
+    <section className="py-12 bg-gray-100" data-aos="fade-up">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-bold text-gray-800">Our Properties</h2>
+          <hr className="w-24 mx-auto mt-2 border-t-2 border-blue-500" />
+        </div>
 
-      {/* Responsive Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {propertyFeatures.map((propertyFeature) => (
-          <ModernCard
-            key={propertyFeature.id}
-            title={propertyFeature.title}
-            image={propertyFeature.image}
-            location={propertyFeature.location}
-            availablesuits={propertyFeature.availablesuits}
-            link={propertyFeature.link}
-            units={propertyFeature.units}
-          />
-        ))}
+        {/* Responsive Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {propertyFeatures.map((property) => (
+            <ModernCard key={property.id} {...property} />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
-
-export default Properties;

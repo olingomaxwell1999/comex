@@ -1,5 +1,6 @@
 // components/PopupModal.jsx
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -38,8 +39,8 @@ export default function PopupModal() {
             New Project(Astana Residence)
           </h2>
 
-          <img
-            src="/001.jpg" // Replace with your actual image path
+          <Image
+            src="/../../../assets/001.jpg" // Replace with your actual image path
             alt="New Project"
             className="w-full h-auto rounded-md mb-5 shadow-md"
           />
@@ -47,7 +48,7 @@ export default function PopupModal() {
           <Link
             href=""
             target="_blank"
-            className="inline-block px-6 py-3 bg-green-700 hover:bg-green-800 text-white font-semibold rounded-md shadow-md hover:shadow-lg transition duration-300"
+            className="inline-block px-6 py-3 bg-[#f8a428] hover:bg-green-800 text-white font-semibold rounded-md shadow-md hover:shadow-lg transition duration-300"
           >
             View Project
           </Link>

@@ -2,6 +2,7 @@ import Head from "next/head";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import "./globals.css";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 export const metadata = {
   title: "Comex Homes",
@@ -30,7 +31,6 @@ export default function RootLayout({ children }) {
               });
             `,
           }}
-          
         />
         {/* Start of HubSpot Embed Code */}
         <script
@@ -52,6 +52,7 @@ export default function RootLayout({ children }) {
         </noscript>
         <Navbar />
         {children}
+        <WhatsAppButton />
         <Footer />
       </body>
     </html>

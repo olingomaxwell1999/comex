@@ -31,7 +31,7 @@ export default function ModernCard({
         </div>
 
         {/* Location */}
-        <div className="flex items-center text-gray-600 text-sm mb-3">
+        <div className="flex items-center text-black text-sm mb-3">
           <MdLocationOn className="mr-1" />
           <span>{location}</span>
         </div>

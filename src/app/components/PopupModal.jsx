@@ -40,7 +40,7 @@ export default function PopupModal() {
           </h2>
 
           <Image
-            src="/../../../assets/001.jpg" // Replace with your actual image path
+            src="../../../assets/001.jpg" // Replace with your actual image path
             alt="New Project"
             className="w-full h-auto rounded-md mb-5 shadow-md"
           />

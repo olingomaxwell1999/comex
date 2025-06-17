@@ -35,19 +35,19 @@ export default function PopupModal() {
 
           <div className="p-6 text-center">
             <h2 className="text-2xl md:text-3xl font-extrabold text-green-800 mb-4">
-              New Project
+              New Project - Astana Residence
             </h2>
 
             <Image
               src={astanaresidence}
               alt="New Project"
-              width={500}
-              height={300}
+              width={250}
+              height={150}
               className="w-full h-auto rounded-md mb-5 shadow-md"
             />
 
             <Link
-              href=""
+              href="https://www.astanaresidence.com/"
               target="_blank"
               className="inline-block px-6 py-3 bg-[#f8a428] hover:bg-green-800 text-white font-semibold rounded-md shadow-md hover:shadow-lg transition duration-300"
             >

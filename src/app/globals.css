@@ -65,7 +65,7 @@ a {
 
 header {
   position: fixed !important;
-  z-index: 100000;
+  z-index: 9992;
   top: 0;
   right: 0;
   width: 100%;

@@ -8,13 +8,8 @@ export default function PopupModal() {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
-    // Check if modal was shown before
-    const hasSeenModal = localStorage.getItem("hasSeenModal");
-
-    if (!hasSeenModal) {
-      setShowModal(true);
-      localStorage.setItem("hasSeenModal", "true");
-    }
+    // Show the popup on every page load
+    setShowModal(true);
   }, []);
 
   const handleClose = () => {
@@ -24,11 +19,11 @@ export default function PopupModal() {
   if (!showModal) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm">
-      <div className="bg-white rounded-lg shadow-2xl max-w-md w-full mx-4 overflow-hidden transform transition-all duration-300 ease-in-out scale-100 animate-fadeInDown">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm animate-fadeIn">
+      <div className="bg-white rounded-lg shadow-2xl max-w-md w-full mx-4 overflow-hidden transform transition-all duration-300 ease-in-out animate-zoomIn">
         <button
           onClick={handleClose}
-          className="absolute top-3 right-3 text-gray-500 hover:text-gray-800"
+          className="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold"
           aria-label="Close modal"
         >
           &times;
@@ -36,12 +31,14 @@ export default function PopupModal() {
 
         <div className="p-6 text-center">
           <h2 className="text-2xl md:text-3xl font-extrabold text-green-800 mb-4">
-            New Project(Astana Residence)
+            New Project (Astana Residence)
           </h2>
 
           <Image
-            src="../../../assets/001.jpg" // Replace with your actual image path
+            src="../../../assets/001.jpg"
             alt="New Project"
+            width={500}
+            height={300}
             className="w-full h-auto rounded-md mb-5 shadow-md"
           />
 

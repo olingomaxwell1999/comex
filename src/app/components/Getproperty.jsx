@@ -34,10 +34,7 @@ function Getproperty() {
           <h3>Starting from Ksh 2.2M </h3>
         </div>
 
-        <Link
-          href="https://forms.zohopublic.com/balozi/form/PropertyInterest/formperma/A33a_iR2K9mYWoQm68L3X_NCve97H84-YitBPSETT7o"
-          target="_blank"
-        >
+        <Link href="https://zfrmz.com/63qeS4QHxcWIQdgr1NB3" target="_blank">
           <button className="btn">register interest</button>
         </Link>
       </div>

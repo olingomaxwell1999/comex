@@ -8,6 +8,7 @@ import MapComponent from "./components/MapComponent";
 import Getproperty from "./components/Getproperty";
 import Whycomex from "./components/Whycomex";
 import Contactus from "./components/Contactus";
+import PopupModal from "./components/PopupModal";
 const Homebanner = dynamic(() => import("./components/Homebanner"), {
   ssr: false,
 });
@@ -64,6 +65,7 @@ export default function Home() {
         ></script> */}
       </Head>
 
+      <PopupModal />
       <Homebanner />
       <Getproperty />
       <Covertwo />

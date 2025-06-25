@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import astanaresidence from "../../../assets/001.jpg";
+import astanaresidence from "../../../assets/008.jpg";
 
 export default function PopupModal() {
   const [showModal, setShowModal] = useState(false);

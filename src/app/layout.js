@@ -7,7 +7,7 @@ import WhatsAppButton from "./components/WhatsAppButton";
 export const metadata = {
   title: "Comex Homes",
   description:
-    "This is a worldwide real estate farm that deals with building, selling and managing of real estate properties",
+    "Our Properties are stategically situated in prime locations in Nairobi With the state of the art, convinience and ultra luxurious amenities. Choose from our spetacular range of Iconic Properties starting from 2.2M.",
 };
 
 export default function RootLayout({ children }) {
